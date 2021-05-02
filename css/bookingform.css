@@ -1,0 +1,143 @@
+body
+{
+    /* background: url(https://lh3.googleusercontent.com/proxy/U8N6N5meM_rACCpBC0a4w5K1Vx4SW4s11OHxZXRNS9nTM12swNepy8lVwkA7ap0oA1BaHlT-LeBxz64NVW3QlmISc2VlO7irv2fV2LkeUPKN) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  background: rgba(255, 217, 0, 0.692);
+  border: 13.54px solid rgba(218, 165, 32, 0.863);
+}
+.booking
+{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 0px;
+  margin: 0;
+}
+h1
+{
+    text-align: center;
+    font-size: 48px;
+    color: rgb(255, 8, 8);
+    font-family:Arial, Helvetica, sans-serif;
+}
+#Username,#emailid
+{
+  border:none;
+  border-bottom:1px solid;
+}
+
+.inputForm center
+{
+    color: #043cf5;
+}
+.screen
+{
+  width:100%;
+  height:20px;
+  background:#4388cc;
+  color:#fff;
+  line-height:20px;
+  font-size:15px;
+}
+
+.smallBox::before
+{
+  content:".";
+  width:15px;
+  height:15px;
+  float:left;
+  margin-right:10px;
+}
+.greenBox::before
+{
+  content:"";
+  background:Green;
+}
+.redBox::before
+{
+  content:"";
+  background:Red;
+}
+.emptyBox::before
+{
+  content: "";
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+.seats
+{
+  border:1px solid red;
+  background:yellow;
+} 
+/* .occupied::before
+{
+    content:"";
+  background:Red;
+} */
+
+
+.seatGap
+{
+  width:40px;
+}
+
+.seatVGap
+{
+  height:40px;
+}
+
+table
+{
+  text-align:center;
+}
+
+
+.Displaytable
+{
+  text-align:center;
+}
+.Displaytable td, .Displaytable th {
+    border: 1px solid;
+    text-align: left;
+}
+
+textarea
+{
+  border:none;
+  background:transparent;
+}
+
+
+
+input[type=checkbox] {
+    width:0px;
+    margin-right:18px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align:middle;
+    text-align: center;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    background-color:#ccc;
+}
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
+
+.occupiedSeat
+{
+    background-color: red;
+  width:15px;
+  margin-top: 4.5px ;
+  margin-left: 3.5px;
+  height:14.5px;
+}
+

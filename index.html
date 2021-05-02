@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <!-- footer css -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#abtus"> About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="contactus.html" target="_self">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search Movies"
+                        onfocus="myOnFocusFunction(this)" onBlur="myBlurFunction(this)">
+                </div>
+            </ul>
+            <!-- movie slider start -->
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <!-- radio buttons start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio buttons end -->
+            <!-- slide images start -->
+            <div class="slide first">
+                <a href="https://en.wikipedia.org/wiki/Lucifer_(TV_series)" target="_blank"><img src="img/1.jfif"
+                        alt="Lucifer"></a>
+            </div>
+            <div class="slide second">
+                <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)" target="_blank"><img
+                        src="img/2.jpg" alt="The Walking Dead"></a>
+            </div>
+            <div class="slide third">
+                <a href="https://en.wikipedia.org/wiki/Young_Justice_(TV_series)" target="_blank"><img src="img/3.jpg"
+                        alt="Young Justice League"></a>
+            </div>
+            <div class="slide fourth">
+                <a href="https://en.wikipedia.org/wiki/World_War_Z_(film)" target="_blank"><img src="img/4.jpg"
+                        alt="World War Z"></a>
+            </div>
+            <!-- slide images end -->
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+    </div>
+    <!-- movie slider end -->
+
+    <div class="big-box">
+        <div class="box-left">
+            <a href="calender.html"><button class="BTN btn1">CINEMA AND MOVIES TIME-TABLE</button></a><br>
+            <a href="seat-and-price-status.html"><button class="BTN btn2">SEAT AND PRICE STATUS</button></a><br>
+            <a href="bookingform.html"><button class="BTN btn1">BOOK TICKETS NOW!</button></a><br>
+            <a href="https://www.youtube.com/results?search_query=trailers" target="_blank"><button
+                    class="BTN btn2">WATCH TRAILERS</button></a>
+            <div class="feeds">
+                <!-- start sw-rss-feed code -->
+                <script type="text/javascript">
+
+                    rssfeed_url = new Array();
+                    rssfeed_url[0] = "https://rss.app/feeds/BU2mVksqIG79ByNd.xml";
+                    rssfeed_frame_width = "290";
+                    rssfeed_frame_height = "500";
+                    rssfeed_scroll = "on";
+                    rssfeed_scroll_step = "6";
+                    rssfeed_scroll_bar = "off";
+                    rssfeed_target = "_blank";
+                    rssfeed_font_size = "12";
+                    rssfeed_font_face = "";
+                    rssfeed_border = "on";
+                    rssfeed_css_url = "https://feed.surfing-waves.com/css/style6.css";
+                    rssfeed_title = "on";
+                    rssfeed_title_name = "";
+                    rssfeed_title_bgcolor = "#3366ff";
+                    rssfeed_title_color = "#fff";
+                    rssfeed_title_bgimage = "";
+                    rssfeed_footer = "off";
+                    rssfeed_footer_name = "rss feed";
+                    rssfeed_footer_bgcolor = "#fff";
+                    rssfeed_footer_color = "#333";
+                    rssfeed_footer_bgimage = "";
+                    rssfeed_item_title_length = "50";
+                    rssfeed_item_title_color = "#666";
+                    rssfeed_item_bgcolor = "#fff";
+                    rssfeed_item_bgimage = "";
+                    rssfeed_item_border_bottom = "on";
+                    rssfeed_item_source_icon = "off";
+                    rssfeed_item_date = "off";
+                    rssfeed_item_description = "on";
+                    rssfeed_item_description_length = "120";
+                    rssfeed_item_description_color = "#666";
+                    rssfeed_item_description_link_color = "#333";
+                    rssfeed_item_description_tag = "off";
+                    rssfeed_no_items = "0";
+                    rssfeed_cache = "fd85f4b12468c41c22a649c6e3c74b41";
+                </script>
+                <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+                <div class="newsfeeds">powered by <a href="https://www.google.com" rel="noopener" target="_blank"
+                        style="color:#ccc;">Google</a>
+                </div>
+                <!-- end sw-rss-feed code -->
+            </div>
+        </div>
+        <div class="box-right">
+            <div class="container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Walking_Dead_Season_3_Official_Poster.jpg/220px-Walking_Dead_Season_3_Official_Poster.jpg"
+                                alt="The Walking Dead">
+                            <h3>The Walking Dead</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus.
+                                <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)"
+                                    target="_blank">More details</a>
+                            </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/halfstar.png">
+                                <img src="img/icon/emptystar.png">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/7/74/The_Wolverine_posterUS.jpg"
+                                alt="Wolverine">
+                            <h3>Wolverine</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/The_Wolverine_(film)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/emptystar.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://i.pinimg.com/originals/da/cf/7a/dacf7adf184e48076524688d0ee48dd3.jpg"
+                                alt="Lucifer">
+                            <h3>Lucifer</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Lucifer_(TV_series)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/81f3ANExTXL.jpg"
+                                alt="Young Justice">
+                            <h3>Young Justice</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Young_Justice_(TV_series)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/halfstar.png">
+                                <img src="img/icon/emptystar.png">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/71Q3Jf4l%2BjL._SY445_.jpg"
+                                alt="World War Z">
+                            <h3>World War Z</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/World_War_Z_(film)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/81o7TpOLrDL._SY800_.jpg"
+                                alt="Teen Wolf">
+                            <h3>Teen Wolf</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/halfstar.png">
+                                <img src="img/icon/emptystar.png">
+                                <img src="img/icon/emptystar.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/jeek8sw0/poster/a/d/g/small-hollywood-movie-poster-rocky-blue-ray-cover-hollywood-original-imaf32wkjhjf3gk4.jpeg?q=70"
+                                alt="Rocky">
+                            <h3>Rocky</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Rocky" target="_blank">More Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/halfstar.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP14vLKiVbIlj3wNIQA5OtAXGQtbwjR5HmMA&usqp=CAU"
+                                alt="Avatar">
+                            <h3>Avatar</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Avatar_(2009_film)" target="_blank">More
+                                    Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/emptystar.png">
+                                <img src="img/icon/emptystar.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0N6vgo8RTUqrfTIaTZV7CIlx6usd4iHVPmA&usqp=CAU"
+                                alt="Surya The Soldier">
+                            <h3>Surya The Soldier</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nobis sunt quidem error,
+                                dolorum
+                                nulla voluptates architecto iusto mollitia totam itaque quo quos, voluptatibus. <a
+                                    href="https://en.wikipedia.org/wiki/Naa_Peru_Surya,_Naa_Illu_India"
+                                    target="_blank">More Details</a> </p>
+                            <div class="rating">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                                <img src="img/icon/star.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container">
+            <div class="sec aboutus" id="abtus">
+                <h2>About Us</h2>
+                <p>At BMS, we want to entertain the world. Whatever your taste, and no matter where you live, we give
+                    you access to best-in-class TV shows, movies and documentaries. Our members control what they want
+                    to watch, when they want it, with no ads. We are the world’s biggest fans of entertainment, and
+                    we’re always looking to help you find your next favorite story.
+                </p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/1vijay11/about" target="_blank"><i class="fab fa-facebook-f"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Vijay71670719" target="_blank"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCnvZGPiZzaXKqYmPrjHW4pQ" target="_blank"><i
+                                class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/vijay-kumar-yadav-247935202" target="_blank"><i
+                                class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#abtus">About</a></li>
+                    <li><a href="calender.html">Movies Time-Table</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="tc.html">Terms and Conditions</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                        <span>Lovely Professional University,<br>
+                            Jalandhar - Delhi G.T. Road, Phagwara,<br>Punjab (India) - 144411
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
+                        <p><a href="tel:12345678900">+1 234 567 8900</a><br>
+                            <a href="tel:12345678900">+1 234 567 8900</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="far fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:vijay.12020077@lpu.in">vijay.12020077@lpu.in</a></p>
+                    </li>
+                </ul>
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © 2021 Booking Management System. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

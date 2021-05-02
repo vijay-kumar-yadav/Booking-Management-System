@@ -1,0 +1,239 @@
+li
+{
+    list-style: none;
+}
+
+ul
+{
+    margin: 0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: rgba(221, 44, 31, 0.856);
+}
+body{
+    background-image: url(../img/unnamed.jpg);
+}
+
+.calender-container
+{
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+    grid-template-areas: 
+    ".header"
+    "timeslots-container main";
+    /* border-color: chartreuse; */
+    /* background: rgb(143, 123, 231); */
+}
+
+.weekdays
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+}
+/* 
+.daynumbers
+{
+    min-height: 2em;
+} */
+
+.weekdays
+{
+    background: rgb(90, 192, 175);
+    min-height: 3em;
+}
+.weekdays li{
+    border: solid rgba(225, 65, 217, 0.418);
+    text-align: center;
+    padding: 12.5px;
+}
+.calender-container img{
+    height: 60px;
+    width: 50px;
+}
+
+/* .header
+{
+    background: rgb(206, 134, 134);
+    grid-area:header;
+} */
+
+.timeslots-container
+{
+    background: rgb(253, 197, 197);
+    grid-area: timeslots-container;
+    justify-content: left;
+}
+
+.timeslots
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeslots li
+{
+    min-height: 60px;
+}
+
+.timeslots li:after
+{
+    content:"" ;
+    position: absolute;
+    left: 10px;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+    background: rgb(247, 246, 248);
+}
+.event-container
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(36,1fr);
+    grid-area: main;
+    position: relative;
+}
+.slot
+{
+    position: absolute;
+    background: rgb(117, 119, 119);
+    border-radius: 1px;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.slot  img{
+    width: 200px ;
+    height: 180px;
+}
+/* 1min=1px */
+.slot-1
+{
+    height: 180px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    width: 200px ;
+    grid-row: 0;
+    grid-column: 1;
+    /* width: ; */
+}
+
+.slot-2
+{
+    height: 180px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    width: 200px ;
+    grid-row: 15;
+    grid-column: 1;
+    background: rgba(220, 20, 60, 0.801);
+    /* width: ; */
+}
+.slot-3
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 0;
+    grid-column: 2;
+    /* width: ; */
+}
+.slot-4
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+        grid-row: 19;
+    grid-column: 2;
+    /* width: ; */
+}
+.slot-5
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 10;
+    grid-column: 4;
+    /* width: ; */
+}
+.slot-6
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 24;
+    grid-column: 4;
+    /* width: ; */
+}
+.slot-7
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 5;
+    grid-column: 5;
+    /* width: ; */
+}
+.slot-8
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 24;
+    grid-column: 5;
+    /* width: ; */
+}
+.slot-9
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 0;
+    grid-column: 6;
+    /* width: ; */
+}
+.slot-10
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 19;
+    grid-column: 6;
+    /* width: ; */
+}
+.slot-11
+{
+    height: 180px;
+    width: 200px;
+    /* 9-10=1*60=240min
+    240/15=16+1=17;    
+    */
+    grid-row: 10;
+    grid-column: 7;
+    /* width: ; */
+}
