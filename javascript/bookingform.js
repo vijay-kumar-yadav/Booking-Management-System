@@ -81,6 +81,6 @@ function onBookTicketClick()
     else
     {
         alert("Thank You For Booking.");
-        window.location.assign("https://www.google.com","_self");
+        window.location.assign("index.html","_self");
     }
 }
