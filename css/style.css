@@ -148,7 +148,7 @@ top: 0;
     background: #40D3DC;
   } 
  body{
-  background: url(img/background.jpg) no-repeat center center fixed; 
+  background: url(../img/background.jpg) no-repeat center center fixed; 
               background-size: cover;
  }
  
